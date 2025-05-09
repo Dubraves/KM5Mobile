@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.km5mobile">
+
+    <!-- Возможность работать как USB‑host -->
+    <uses-feature
+        android:name="android.hardware.usb.host"
+        android:required="false" />
+
+    <!-- Разрешения (добавим позже, когда понадобится) -->
+
+    <application
+        android:name=".KM5MobileApp"
+        android:label="KM5Mobile">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="KM5Mobile">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+</manifest>
